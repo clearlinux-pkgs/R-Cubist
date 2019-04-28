@@ -4,14 +4,15 @@
 #
 Name     : R-Cubist
 Version  : 0.2.2
-Release  : 20
+Release  : 21
 URL      : https://cran.r-project.org/src/contrib/Cubist_0.2.2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Cubist_0.2.2.tar.gz
 Summary  : Rule- And Instance-Based Regression Modeling
 Group    : Development/Tools
 License  : GPL-3.0
 Requires: R-Cubist-lib = %{version}-%{release}
-Requires: R-reshape2
+Requires: R-plyr
+BuildRequires : R-plyr
 BuildRequires : R-reshape2
 BuildRequires : buildreq-R
 
@@ -34,10 +35,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552732359
+export SOURCE_DATE_EPOCH=1556470073
 
 %install
-export SOURCE_DATE_EPOCH=1552732359
+export SOURCE_DATE_EPOCH=1556470073
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -73,7 +74,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc  Cubist || :
+R CMD check --no-manual --no-examples --no-codoc Cubist || :
 
 
 %files
