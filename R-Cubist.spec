@@ -4,7 +4,7 @@
 #
 Name     : R-Cubist
 Version  : 0.4.2.1
-Release  : 57
+Release  : 58
 URL      : https://cran.r-project.org/src/contrib/Cubist_0.4.2.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Cubist_0.4.2.1.tar.gz
 Summary  : Rule- And Instance-Based Regression Modeling
@@ -14,9 +14,6 @@ Requires: R-Cubist-lib = %{version}-%{release}
 Requires: R-reshape2
 BuildRequires : R-reshape2
 BuildRequires : buildreq-R
-# Suppress stripping binaries
-%define __strip /bin/true
-%define debug_package %{nil}
 
 %description
 corrections.
@@ -38,10 +35,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1678469098
+export SOURCE_DATE_EPOCH=1678814090
 
 %install
-export SOURCE_DATE_EPOCH=1678469098
+export SOURCE_DATE_EPOCH=1678814090
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
