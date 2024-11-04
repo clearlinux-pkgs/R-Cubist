@@ -7,7 +7,7 @@
 #
 Name     : R-Cubist
 Version  : 0.4.4
-Release  : 64
+Release  : 65
 URL      : https://cran.r-project.org/src/contrib/Cubist_0.4.4.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Cubist_0.4.4.tar.gz
 Summary  : Rule- And Instance-Based Regression Modeling
