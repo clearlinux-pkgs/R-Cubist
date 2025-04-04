@@ -1,5 +1,5 @@
 PKG_NAME := R-Cubist
-URL = https://cran.r-project.org/src/contrib/Cubist_0.4.4.tar.gz
+URL = https://ftp.osuosl.org/pub/cran/src/contrib/Cubist_0.5.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
